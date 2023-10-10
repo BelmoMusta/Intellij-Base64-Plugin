@@ -1,0 +1,40 @@
+<idea-plugin>
+    <id>musta.belmo.plugins.base64converter</id>
+    <name>Base64 Converter</name>
+    <version>1.0</version>
+    <vendor email="belmokhtar.91@gmail.com" url="https://github.com/BelmoMusta">mustabelmo</vendor>
+
+    <description><![CDATA[
+  This plugins will help convert strings to base64.
+
+                    Developed with ♥ by mustabelmo
+]]></description>
+
+    <change-notes><![CDATA[
+     First version
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <depends>com.intellij.modules.java</depends>
+
+    <actions>
+        <action id="musta.belmo.musta.belmo.plugins.base64converter.action.DecodeBase64Action"
+                class="musta.belmo.plugins.base64converter.action.DecodeBase64Action" text="Decode base 64"
+
+                description="base 64">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+        <action id="musta.belmo.musta.belmo.plugins.base64converter.action.EncodeBase64Action"
+                class="musta.belmo.plugins.base64converter.action.EncodeBase64Action" text="Encode base 64"
+                description="base 64">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+
+
+
+    </actions>
+
+</idea-plugin>
